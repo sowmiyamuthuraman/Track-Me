@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnShowAddress"
+        android:layout_below="@+id/btnShowAddress"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="64dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnGPSShowLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="LOCATION" />
+
+    <Button
+        android:id="@+id/btnShowAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnGPSShowLocation"
+        android:layout_below="@+id/btnGPSShowLocation"
+        android:layout_marginTop="52dp"
+        android:text="ADDRESS" />
+
+    <Button
+        android:id="@+id/photo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnShowAddress"
+        android:layout_alignParentBottom="true"
+        android:text="PHOTO" />
+
+    <Button
+        android:id="@+id/sendmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="MAIL" />
+
+    <ImageView
+        android:id="@+id/imagepreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnShowAddress"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_marginBottom="16dp" />
+
+    <VideoView
+        android:id="@+id/videopreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="18dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/sendsms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/sendmail"
+        android:text="SMS" />
+
+    <Button
+        android:id="@+id/video1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/photo1"
+        android:text="VIDEO" />
+
+</RelativeLayout>
